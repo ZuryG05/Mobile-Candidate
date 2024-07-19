@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtViewTitulo" type="id" />
+    <item name="btnFilter" type="id" />
+    <item name="btnReset" type="id" />
+    <item name="recyclerViewUsers" type="id" />
+</resources>

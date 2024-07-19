@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EXAMEN_Android</string>
+    <string name="title_activity_main">Mobile Candidate</string>
+
+    <string name="user_nombre">Nombre:</string>
+    <string name="user_email">Email:</string>
+    <string name="user_genero">Género:</string>
+    <string name="user_direccion">Dirección:</string>
+    <string name="user_telefono">Teléfono:</string>
+    <string name="btn_regresar">Regresar</string>
+    <string name="title_activity_main2">\n</string>
+
+
+</resources>
