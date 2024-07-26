@@ -1,5 +1,6 @@
 package com.example.examen_android;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -37,17 +38,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnFilter = findViewById(R.id.btnFilter);
+        Button btnFilterMale = findViewById(R.id.btnFilterMale);
         Button btnReset = findViewById(R.id.btnReset);
         recyclerViewUsers = findViewById(R.id.recyclerViewUsers);
         recyclerViewUsers.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
 
         // Método para cargar usuarios desde la API
            loadUsers();
-        // Configurar onClickListener para el botón de filtro
+
+        // Configurar onClickListener para botones de filtro
         btnFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 filterList("female");
+            }
+        });
+        btnFilterMale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filterList("male");
             }
         });
 
@@ -112,6 +121,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+
 
     }
 
